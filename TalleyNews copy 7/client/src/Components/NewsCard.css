@@ -1,0 +1,63 @@
+.card {
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	margin: 1rem;
+	background-color: rgba(255, 255, 255, 0.85);
+	border-radius: 8px;
+	overflow: hidden;
+	transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+[data-theme="dark"] .card {
+	background-color: rgba(0, 0, 0, 0.85);
+}
+
+.card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.favorite-button {
+    background-color: green;
+    color: white;
+    /* Other styles */
+}
+
+.unfavorite-button {
+    background-color: red;
+    color: white;
+    /* Other styles */
+}
+
+.card-title,
+.card-text,
+.article-date,
+.article-author,
+.article-source {
+	color: var(--text-color);
+}
+.card-img-top {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	opacity: 1;
+}
+
+.card-body {
+	padding: 1.5rem;
+}
+
+.btn-read-more {
+	display: inline-block;
+	background-color: var(--primary-color);
+	padding: 0.375rem 0.75rem;
+	border-radius: 0.25rem;
+	text-decoration: none;
+	font-weight: 500;
+	transition: background-color 0.2s, color 0.2s; /* very smoooooth */
+}
+.btn-read-more:hover,
+.btn-read-more:focus {
+	background-color: var(--primary-dark-color);
+	color: #ffffff;
+	text-decoration: none;
+}

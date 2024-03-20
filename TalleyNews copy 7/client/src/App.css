@@ -1,0 +1,85 @@
+:root {
+	--primary-color: #007bff;
+	--primary-dark-color: #0056b3;
+	 --background-color-light: #f0f8ff;
+    --background-color-dark: #333;
+	--text-color: #000;
+	--card-background-color: #f0f0f0;
+	--card-bg-light: rgba(255, 255, 255, 0.65);
+	--card-shadow-light: 0 4px 6px rgba(0, 0, 0, 0.1);
+	--opacity-level: 80%;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+[data-theme="dark"] {
+	--background-color: #1c1c1c;
+	--text-color: #fff;
+	--card-bg-dark: rgba(0, 0, 0, 0.65);
+	--card-shadow-dark: 0 0 8px rgba(255, 255, 255, 0.2);
+	filter: contrast(120%);
+	--opacity-level: 90%;
+}
+
+
+
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: var(--text-color);
+	background-color: var(--background-color);
+	transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+a {
+	color: var(--primary-color);
+	transition: color 0.2s ease;
+}
+
+a:hover {
+	color: var(--primary-dark-color);
+	text-decoration: none;
+}
+
+.container,
+.container-fluid {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 500;
+	line-height: 1.2;
+}
+
+h1 {
+	font-size: 2.5rem;
+}
+h2 {
+	font-size: 2rem;
+}
+h3 {
+	font-size: 1.75rem;
+}
+
+@media (max-width: 768px) {
+	h1 {
+		font-size: 2rem;
+	}
+	h2 {
+		font-size: 1.5rem;
+	}
+	h3 {
+		font-size: 1.25rem;
+	}
+}

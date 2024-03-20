@@ -1,0 +1,23 @@
+.pagination {
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	padding: 0;
+}
+
+.page-link {
+	color: var(--primary-color);
+	cursor: pointer;
+}
+
+
+
+.page-item.active .page-link {
+	font-weight: bold;
+	text-decoration: underline;
+	color: var(
+		--primary-dark-color
+	);
+}
+
+
